@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WELCOME TO DEADLOX-WEB STORE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .bg-buttons {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .bg-buttons button {
+      margin: 0 5px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .btn {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #128C7E;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>WEB STORE BY DEADLOX</h1>
+
+  <div class="bg-buttons">
+    <button class="btn" onclick="changeBackground('white')">Putih</button>
+    <button class="btn" onclick="changeBackground('#f0f8ff')">Biru Muda</button>
+    <button class="btn" onclick="changeBackground('#ffe4e1')">Merah Muda</button>
+    <button class="btn" onclick="changeBackground('#e6ffe6')">Hijau Muda</button>
+  </div>
+
+  <div class="products">
+    <div class="product">
+      <img src="https://b.top4top.io/p_33898n5bg0.jpg" alt="Produk 1">
+      <h3>JASTEB</h3>
+      <p>5K - 100K</p>
+      <button class="btn" onclick="beliProduk('Produk 1')">Beli</button>
+    </div>
+    <div class="product">
+      <img src="https://c.top4top.io/p_3389lmv4n0.jpg" alt="Produk 2">
+      <h3>UNCEK FRESH</h3>
+      <p>5K - 30K</p>
+      <button class="btn" onclick="beliProduk('Produk 2')">Beli</button>
+    </div>
+    <div class="product">
+      <img src="https://e.top4top.io/p_3389h6qlf0.png" alt="Produk 3">
+      <h3>PANEL RUN BOT</h3>
+      <p>Rp1K - 15K</p>
+      <button class="btn" onclick="beliProduk('Produk 3')">Beli</button>
+    </div>
+    <div class="product">
+      <img src="https://e.top4top.io/p_3389h6qlf0.png" alt="Produk 4">
+      <h3>ADMIN PANEL BOT</h3>
+      <p>10K - 20K</p>
+      <button class="btn" onclick="beliProduk('Produk 4')">Beli</button>
+    </div>
+    <div class="product">
+      <img src="https://e.top4top.io/p_3389h6qlf0.png" alt="Produk 5">
+      <h3>PT PANEL BOT</h3>
+      <p>25K - 30K</p>
+      <button class="btn" onclick="beliProduk('Produk 5')">Beli</button>
+    </div>
+    <div class="product">
+      <img src="https://e.top4top.io/p_3389ive770.jpg" alt="Produk 6">
+      <h3>MURID BADAK WHATSAPP 🥵🤟</h3>
+      <p>Rp5000</p>
+      <button class="btn" onclick="beliProduk('Produk 6')">Beli</button>
+    </div>
+  </div>
+
+  <script>
+    function changeBackground(color) {
+      document.body.style.backgroundColor = color;
+    }
+
+    function beliProduk(namaProduk) {
+      const nomor = "6283873939837"; // Ganti dengan nomor WhatsApp kamu
+      const pesan = `WOI KONTOL GW MAU BELI NIH ON GECE😡 ${namaProduk}`;
+      const url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
